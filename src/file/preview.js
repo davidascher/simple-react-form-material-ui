@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import LinearProgress from 'material-ui/LinearProgress'
 import CircularProgress from 'material-ui/CircularProgress'
@@ -29,15 +30,15 @@ const styles = {
 }
 
 const propTypes = {
-  base64: React.PropTypes.string,
-  url: React.PropTypes.string,
-  isImage: React.PropTypes.bool,
-  isUploading: React.PropTypes.bool,
-  progress: React.PropTypes.number,
-  onDelete: React.PropTypes.func,
-  deleteLabel: React.PropTypes.any,
-  confirmDeleteText: React.PropTypes.any,
-  styles: React.PropTypes.object.isRequired
+  base64: PropTypes.string,
+  url: PropTypes.string,
+  isImage: PropTypes.bool,
+  isUploading: PropTypes.bool,
+  progress: PropTypes.number,
+  onDelete: PropTypes.func,
+  deleteLabel: PropTypes.any,
+  confirmDeleteText: PropTypes.any,
+  styles: PropTypes.object.isRequired
 }
 
 export default class FilesPreview extends React.Component {

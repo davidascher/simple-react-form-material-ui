@@ -1,14 +1,15 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import ReactDOM from 'react-dom'
 import RaisedButton from 'material-ui/RaisedButton'
 import _ from 'underscore'
 
 const propTypes = {
-  accept: React.PropTypes.string,
-  label: React.PropTypes.any,
-  multi: React.PropTypes.bool,
-  onUpload: React.PropTypes.func.isRequired,
-  passBase64: React.PropTypes.bool
+  accept: PropTypes.string,
+  label: PropTypes.any,
+  multi: PropTypes.bool,
+  onUpload: PropTypes.func.isRequired,
+  passBase64: PropTypes.bool
 }
 
 const defaultProps = {

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import {FieldType, registerType} from 'simple-react-form'
 import _ from 'underscore'
@@ -15,7 +16,7 @@ const propTypes = {
    *    url is the url of the file, meta is a object with whatever you want.
    * onError input is message.
    */
-  upload: React.PropTypes.func.isRequired,
+  upload: PropTypes.func.isRequired,
 
   /**
    * A function that recieves { file, onReady, onError }.
@@ -23,50 +24,50 @@ const propTypes = {
    * onReady is a function with no input.
    * onError input is message.
    */
-  delete: React.PropTypes.func,
+  delete: PropTypes.func,
 
   /**
    * A mime type to match to accept the files.
    * If image prop is set and image prop is also set, this mime type is going to stay.
    * If this prop is not set and image prop is, the mime type will be 'image/*'
    */
-  accept: React.PropTypes.string,
+  accept: PropTypes.string,
 
   /**
    * Only accept images
    */
-  image: React.PropTypes.bool,
+  image: PropTypes.bool,
 
   /**
    * Accept multiple files. If you are using simple-schema and this is true,
    * you must set [Object] to the type.
    */
-  multi: React.PropTypes.bool,
+  multi: PropTypes.bool,
 
   /**
    * Pass the styles props to the preview
    */
-  previewStyles: React.PropTypes.object,
+  previewStyles: PropTypes.object,
 
   /**
    * This delete the files that are not used
    */
-  deleteNotUsedFiles: React.PropTypes.bool,
+  deleteNotUsedFiles: PropTypes.bool,
 
   /**
    * The label of the button
    */
-  uploadLabel: React.PropTypes.any,
+  uploadLabel: PropTypes.any,
 
   /**
    * The label of the delete button
    */
-  deleteLabel: React.PropTypes.any,
+  deleteLabel: PropTypes.any,
 
   /**
    * The text that is shown when deleting
    */
-  confirmDeleteText: React.PropTypes.any
+  confirmDeleteText: PropTypes.any
 }
 
 const defaultProps = {
