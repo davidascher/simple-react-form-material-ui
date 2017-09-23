@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import AutoComplete from 'material-ui/AutoComplete'
 import MenuItem from 'material-ui/MenuItem'
@@ -13,38 +14,38 @@ const propTypes = {
   /**
    * Allow to select multiple items.
    */
-  multi: React.PropTypes.bool,
+  multi: PropTypes.bool,
   /**
    * Meteor method that recieves the search string and returns an array of items
    * with 'label' and 'value' attributes.
    */
-  methodName: React.PropTypes.string.isRequired,
+  methodName: PropTypes.string.isRequired,
   /**
    * Meteor method that recieves the value and must return the label. If
    * ```multi``` is set to true, it will recieve an array and it must return an
    * with the labels in the same order.
    */
-  labelMethodName: React.PropTypes.string.isRequired,
+  labelMethodName: PropTypes.string.isRequired,
   /**
    * A Meteor connection.
    */
-  connection: React.PropTypes.any,
+  connection: PropTypes.any,
   /**
    * Time with no changes that activates the search.
    */
-  waitTime: React.PropTypes.number,
+  waitTime: PropTypes.number,
   /**
    * A function that creates a document and pass the value in a callback
    */
-  create: React.PropTypes.func,
+  create: PropTypes.func,
   /**
    * A function that returns the create label
    */
-  createLabel: React.PropTypes.func,
+  createLabel: PropTypes.func,
   /**
    * A function that returns if a value can be created
    */
-  canCreate: React.PropTypes.func
+  canCreate: PropTypes.func
 }
 
 const defaultProps = {

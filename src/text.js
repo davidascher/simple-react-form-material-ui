@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react'
 import TextField from 'material-ui/TextField'
 import {FieldType, registerType} from 'simple-react-form'
 
 const propTypes = {
   ...FieldType.propTypes,
-  fieldType: React.PropTypes.string
+  fieldType: PropTypes.string
 }
 
 const defaultProps = {
